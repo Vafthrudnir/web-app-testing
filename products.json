@@ -2,11 +2,13 @@
   "products": [
     {
       "name": "Insider",
-      "id": "insider"
+      "id": "insider",
+      "script": "js/insider.js"
     },
     {
       "name": "Cetlis",
-      "id": "cetlis"
+      "id": "cetlis",
+      "script": ""
     }
   ]
 }

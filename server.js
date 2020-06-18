@@ -25,8 +25,10 @@ app.get('/cetlis', (req, res) => {
 
 // Insider jatek kod
 app.get('/insider', (req, res) => {
+	const script = products.products.find(p => p.id == 'insider').script;
 	res.render('insider', {
-		title: 'Insider'
+		title: 'Insider',
+		script: `${script}`
 	});
 });
 
