@@ -33,18 +33,9 @@ app.get('/insider', (req, res) => {
 const words = require('./resources/insider/szavak.json');
 
 io.on('connection', (socket) => {
-	var word_sent = false;
-	socket.on('click', () => {
-		if (word_sent) {
-			io.emit('word', '');
-			word_sent = false;
-		}
-		else {
-			var index = Math.floor(Math.random() * words.words.length)
-			var word = words.words[index];
-			io.emit('word', word);
-			word_sent = true;
-		}
+	socket.on('get_word', () => {
+		var word = words.words[Math.floor(Math.random() * words.words.length)];
+		io.emit('new_word', word);
 	});
 });
 

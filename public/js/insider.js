@@ -1,18 +1,21 @@
 $(function () {
     var socket = io();
+    var word_shown = false;
     $('form').submit(function(e) {
       e.preventDefault();
-      socket.emit('click');
-      return false;
-    });
-    socket.on('word', function(msg) {
-      if (msg == '') {
-          $('.message').text('Ujabb szoert klikk a gombra');
-          $('.word').text('');
+      if (word_shown) {
+        $('.new_word').text('Új szó');
+        $('.word').text('');
+        word_shown = false;
       }
       else {
-          $('.message').text('A szo elrejtesehez klikk a gombra');
-          $('.word').text(msg);
+        socket.emit('get_word');
       }
+      return false;
+    });
+    socket.on('new_word', function(msg) {
+      $('.new_word').text('Szó elrejtése');
+      $('.word').text(msg);
+      word_shown = true;
     });
 });
