@@ -1,36 +1,36 @@
 {
   "profiles": [
     {
-      "firstname": "Tom",
-      "lastname": "Jagger",
+      "firstname": "Bolondos",
+      "lastname": "Bubo",
       "bio":
         "Lorem ipsum dolor sit amet, oratio feugiat sed te, hinc ancillae cum ut. Ad explicari argumentum duo. Sea dicant iriure utroque ei, in duo meis solet. Eum id reque legendos prodesset, his ad solet ceteros. At pri duis recusabo ocurreret, saepe fabellas sed ad, at iudico constituam mel. \n\n Id zril intellegat efficiendi sed, at vel eros vidit. Modus signiferumque ex his, dicant consulatu definitionem ea has. Qui at ubique debitis, cu eripuit inciderint nam. Sit ei admodum interesset mediocritatem. Prima quando suavitate vel an, illum scaevola efficiendi vim ne.",
-      "tagline": "Developer, Writer and Speaker",
+      "tagline": "Egy kadban",
       "twitter": "https://twitter.com/",
-      "imgSrc": "tom-jagger.jpg",
-      "id": "tom"
+      "imgSrc": "bolondos_bubo.jpg",
+      "id": "bubo"
     },
 
     {
-      "firstname": "Sarah",
-      "lastname": "You",
+      "firstname": "Barna",
+      "lastname": "es Feher",
       "bio":
         "Lorem ipsum dolor sit amet, oratio feugiat sed te, hinc ancillae cum ut. Ad explicari argumentum duo. Sea dicant iriure utroque ei, in duo meis solet. Eum id reque legendos prodesset, his ad solet ceteros. At pri duis recusabo ocurreret, saepe fabellas sed ad, at iudico constituam mel. \n\n Id zril intellegat efficiendi sed, at vel eros vidit. Modus signiferumque ex his, dicant consulatu definitionem ea has. Qui at ubique debitis, cu eripuit inciderint nam. Sit ei admodum interesset mediocritatem. Prima quando suavitate vel an, illum scaevola efficiendi vim ne.",
-      "tagline": "UX/UI Designer",
+      "tagline": "Cukkerek",
       "twitter": "https://twitter.com/",
-      "imgSrc": "sarah-you.jpg",
-      "id": "sarah"
+      "imgSrc": "bubok.jpg",
+      "id": "bubok"
     },
 
     {
-      "firstname": "Caroline",
-      "lastname": "Green",
+      "firstname": "Meglepett",
+      "lastname": "Bubokak",
       "bio":
         "Lorem ipsum dolor sit amet, oratio feugiat sed te, hinc ancillae cum ut. Ad explicari argumentum duo. Sea dicant iriure utroque ei, in duo meis solet. Eum id reque legendos prodesset, his ad solet ceteros. At pri duis recusabo ocurreret, saepe fabellas sed ad, at iudico constituam mel. \n\n Id zril intellegat efficiendi sed, at vel eros vidit. Modus signiferumque ex his, dicant consulatu definitionem ea has. Qui at ubique debitis, cu eripuit inciderint nam. Sit ei admodum interesset mediocritatem. Prima quando suavitate vel an, illum scaevola efficiendi vim ne.",
-      "tagline": "Consultant and Photographer",
+      "tagline": "Meg van lepodve szegeny",
       "twitter": "https://twitter.com/",
-      "imgSrc": "caroline-green.jpg",
-      "id": "caroline"
+      "imgSrc": "bubokak.jpg",
+      "id": "bubokak"
     }
   ]
 }
