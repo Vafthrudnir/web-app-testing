@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "name": "Insider",
+      "id": "insider"
+    },
+    {
+      "name": "Cetlis",
+      "id": "cetlis"
+    }
+  ]
+}

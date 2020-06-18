@@ -2,8 +2,7 @@ extends default
 
 block content
   div.container
-    each person in people
+    each product in products
       div.person
-        div.person-image(style=`background: url('/images/${person.imgSrc}') top center no-repeat; background-size: cover;`)
-        h2.person-name #{person.firstname} #{person.lastname}
-        a(href=`/profile?id=${person.id}`) View Profile
+        h2.person-name #{product.name}
+        a(href=`/${product.id}`) Start app
