@@ -35,7 +35,7 @@ const words = require('./resources/insider/szavak.json');
 io.on('connection', (socket) => {
 	socket.on('get_word', () => {
 		var word = words.words[Math.floor(Math.random() * words.words.length)];
-		io.emit('new_word', word);
+		io.emit('new_word_sent', word);
 	});
 });
 
