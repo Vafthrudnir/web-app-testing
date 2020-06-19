@@ -1,16 +1,14 @@
-![Screenshot](https://res.cloudinary.com/turnup/image/upload/v1526512881/homepage-cards.png)
+# First Node Website with socket.io
+Web app development beginner project for streamlining some board games.
 
-# First Node Website Tutorial Starter Files
 
-These are the starter files to accompany the tutorial for building a simple Node.js website with Express and Pug.
-
-You can [access the tutorial here](https://freshman.tech/learn-node).
-
-[Live demo](https://freshman-node.herokuapp.com/)
 
 ## Instructions
 1. Clone repo
 2. Run `npm install`
+3. Either run `npm start` or deploy in docker:
+4. `sudo docker build -t dszabo/web-app-testing .
+    sudo docker run -p 80:8080 -d dszabo/web-app-testing`
 
 ## Getting Help
 
