@@ -1,6 +1,11 @@
 $(function () {
     var socket = io();
 
+    $(document).ready(function() {
+      $('.hide_show_word').hide();
+      $('.word').hide();
+    });
+
     $('.new_word').click(function(e) {
       e.preventDefault();
       socket.emit('get_word');
@@ -15,7 +20,7 @@ $(function () {
       }
       else {
         $('.word').show();
-        $('.hide_show_word').text('Rejtsd el');
+        $('.hide_show_word').text('Elrejt');
       }
       $('.new_word').show();
       return false;
@@ -25,6 +30,7 @@ $(function () {
       $('.word').text(msg);
       $('.word').show();
       $('.new_word').hide();
-      $('.hide_show_word').text('Szó elrejtése');
+      $('.hide_show_word').show();
+      $('.hide_show_word').text('Elrejt');
     });
 });

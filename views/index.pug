@@ -3,6 +3,7 @@ extends default
 block content
   div.container
     each product in products
-      div.person
-        h2.person-name #{product.name}
+      div.product
+        h2 #{product.name}
+        p  #{product.description}
         a(href=`/${product.id}`) Start app

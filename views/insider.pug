@@ -1,10 +1,16 @@
 extends default
 
+block head
+    title #{title}
+    link(rel='stylesheet', href='/css/style_insider.css')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
 block header
 
 block content
-    div
-      h1.word
-    form
-      button.new_word Új szó
-      button.hide_show_word
+    div.word_placeholder
+        h1.word Ez egynagyonnagyonhosszu szo
+    div#buttonholder
+        button.new_word
+            nobr Új szó
+        button.hide_show_word hidden button

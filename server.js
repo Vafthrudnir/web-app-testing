@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
 	res.render('index', {
-		title: 'Homepage',
+		title: `David's web projects`,
 		products: products.products
 	});
 });

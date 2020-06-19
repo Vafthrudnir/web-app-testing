@@ -1,0 +1,44 @@
+body {
+   font-family: Garamond, "Times New Roman", Times, serif;
+   font-size: 16px;
+   color: #333333;
+   background-color: #f2e3ce;
+}
+
+.word_placeholder {
+  margin: 50px;
+  height: 60px;
+}
+
+.word {
+  text-align: center;
+  word-break: break-all;
+}
+
+button {
+  background-color: #44a0b3;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 70%;
+  margin: 5px;
+}
+
+#buttonholder {
+  display: flex;
+  justify-content: center;
+  margin: 0 10%;
+}
+
+button:hover {
+  background-color: #3a8999;
+}
+
+
+@media only screen and (min-width: 768px) {
+  button {
+    width: 400px;
+  }
+}

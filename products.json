@@ -3,12 +3,14 @@
     {
       "name": "Insider",
       "id": "insider",
-      "script": "js/insider.js"
+      "script": "js/insider.js",
+      "description": "Barkochba kicsit maskepp."
     },
     {
       "name": "Cetlis",
       "id": "cetlis",
-      "script": ""
+      "script": "",
+      "description": "Gyujtemeny az eddigi feladvanyokbol."
     }
   ]
 }
