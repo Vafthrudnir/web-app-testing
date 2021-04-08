@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "Insider",
+      "id": "insider",
+      "script": "js/insider.js",
+      "description": "Barkochba kicsit maskepp."
+    },
+    {
+      "name": "Cetlis",
+      "id": "cetlis",
+      "script": "",
+      "description": "Gyujtemeny az eddigi feladvanyokbol."
+    }
+  ]
+}

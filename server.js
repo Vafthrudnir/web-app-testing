@@ -1,6 +1,11 @@
+'use strict';
+
 const express = require('express');
-const people = require('./people.json')
+const products = require('./products.json')
 const app = express();
+
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
 
 app.set('view engine', 'pug');
 
@@ -8,19 +13,36 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
 	res.render('index', {
-		title: 'Homepage',
-		people: people.profiles
+		title: `David's web projects`,
+		products: products.products
 	});
 });
 
-app.get('/profile', (req, res) => {
-	const person = people.profiles.find(p => p.id == req.query.id);
-	res.render('profile', {
-		title: `About ${person.firstname} ${person.lastname}`,
-		person,
+app.get('/cetlis', (req, res) => {
+	res.send('Under development...');
+});
+
+
+// Insider jatek kod
+app.get('/insider', (req, res) => {
+	const script = products.products.find(p => p.id == 'insider').script;
+	res.render('insider', {
+		title: 'Insider',
+		script: `${script}`
 	});
 });
 
-const server = app.listen(8080, () => {
+const words = require('./resources/insider/szavak.json');
+
+io.on('connection', (socket) => {
+	socket.on('get_word', () => {
+		var word = words.words[Math.floor(Math.random() * words.words.length)];
+		socket.emit('new_word_sent', word);
+	});
+});
+
+
+// Server start
+const server = http.listen(8080, () => {
 	console.log(`Express running -> PORT ${server.address().port}`);
 });
