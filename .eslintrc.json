@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        "mocha"
+    ],
+	"extends": ["strongloop", "plugin:mocha/recommended"],
+	"env": {
+		"es6": true,
+		"node": true,
+		"browser": true
+	},
+    "globals": {
+        "io": "readonly"
+    }
+}
