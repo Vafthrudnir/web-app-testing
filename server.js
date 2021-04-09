@@ -46,3 +46,8 @@ io.on('connection', (socket) => {
 const server = http.listen(8080, () => {
   console.log(`Express running -> PORT ${server.address().port}`);
 });
+
+// module.exports = server;
+exports.server = server;
+exports.io = io;
+

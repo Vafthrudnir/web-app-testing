@@ -12,6 +12,7 @@ Web app development beginner project for streamlining some board games.
 
 To run lint use `npm run pretest`
 To run all tests us `npm test`
+To fix lin findings use `npm run pretest -- --fix`
 
 
 ## Getting Help
